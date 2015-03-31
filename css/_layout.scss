@@ -1,0 +1,7 @@
+/* Layout.scss */
+
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
+    .gallery .col-3 {
+        width: calc(50% - #{$gutter});  
+    }
+}
