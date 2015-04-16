@@ -14,12 +14,27 @@
     <body>
 
         <!-- Add your site or application content here -->
+        <div class="fixed">
+            <div class="row">
+                <div class="col-12 fixed-nav">
+                    <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox"/>
+                    <nav role="navigation" class="menu">
+                        <ul>
+                            <li><a href="seattle.html" class="menu-link">Home</a></li>
+                            <li><a href="#history" class="menu-link">History</a></li>
+                        </ul>
+                        <label for="navbar-checkbox" class="navbar-handle"></label>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            
         <div class="outer vcenter banner"> 
             <header role="banner" class="row">
-                <div class="col-12">
+                <div class="col-3 center">
                     <div class="banner-title">
-                        <h1>Seattle</h1>
-                        <h2>Washington</h2>
+                        <h1 data-fitter-happier-text>Seattle</h1>
+                        <h2 data-fitter-happier-text>Washington</h2>
                     </div>
                     <!--<img src="img/seattle-lowrez.jpg" title="Seattle Skyline"/>-->
                 </div>
@@ -41,15 +56,15 @@
                     <img src="img/spaceneedle-lowrez.jpg" title="Space Needle"/>
                 </div>
             </section>
-            <section class="row info">
+            <section class="row equal-height info">
                 <article class="col-8 info-seattle">
-                    <p>Seattle is a coastal seaport city and the seat of King County, in the U.S. state of Washington. With an estimated 652,405 residents as of 2013, Seattle is the largest city in both the State of Washington and the Pacific Northwest region of North America and, as of July 2013, the fastest-growing major city in the United States. The Seattle metropolitan area of around 3.6 million inhabitants is the 15th largest metropolitan area in the United States. The city is situated on a narrow isthmus between Puget Sound (an inlet of the Pacific Ocean) and Lake Washington, about 100 miles (160 km) south of the Canada–United States border. A major gateway for trade with Asia, Seattle is the 8th largest port in the United States and 9th largest in North America in terms of container handling.</p>
+                    <p><em>Seattle</em> is a coastal seaport city and the seat of King County, in the U.S. state of Washington. With an estimated 652,405 residents as of 2013, Seattle is the largest city in both the State of Washington and the Pacific Northwest region of North America and, as of July 2013, the fastest-growing major city in the United States. The Seattle metropolitan area of around 3.6 million inhabitants is the 15th largest metropolitan area in the United States. The city is situated on a narrow isthmus between Puget Sound (an inlet of the Pacific Ocean) and Lake Washington, about 100 miles (160 km) south of the Canada–United States border. A major gateway for trade with Asia, Seattle is the 8th largest port in the United States and 9th largest in North America in terms of container handling.</p>
 
-                    <p>The Seattle area had previously been inhabited by Native Americans for at least 4,000 years before the first permanent European settlers. Arthur A. Denny and his group of travelers, subsequently known as the Denny Party, arrived on the schooner Exact at Alki Point on November 13, 1851. The settlement was moved to its current site and named "Seattle" in 1852, after Chief Si'ahl of the local Duwamish and Suquamish tribes.</p>
+                    <p>The <b>Seattle</b> area had previously been inhabited by Native Americans for at <i>least</i> 4,000 years before the first permanent European settlers. Arthur A. Denny and his group of travelers, subsequently known as the Denny Party, arrived on the schooner Exact at Alki Point on November 13, 1851. The settlement was moved to its current site and named "Seattle" in 1852, after Chief Si'ahl of the local Duwamish and Suquamish tribes.</p>
 
-                    <p>Logging was Seattle's first major industry, but by the late 19th century the city had become a commercial and shipbuilding center as a gateway to Alaska during the Klondike Gold Rush. By 1910, Seattle was one of the 25 largest cities in the country. However, the Great Depression severely damaged the city's economy. Growth returned during and after World War II, due partially to the local Boeing company, which established Seattle as a center for aircraft manufacturing. The city developed as a technology center in the 1980s, with companies like Amazon.com, Microsoft and T-Mobile US based in the area. The stream of new software, biotechnology, and Internet companies led to an economic revival, which increased the city's population by almost 50,000 between 1990 and 2000. Since then, Seattle has become a hub for green industry and a model for sustainable development.</p>
+                    <p>Logging was Seattle's first major industry, but by the late 19th century the city had become a commercial and shipbuilding center as a gateway to Alaska during the <b>Klondike Gold Rush</b>. By 1910, Seattle was one of the 25 largest cities in the country. However, the Great Depression severely damaged the city's economy. Growth returned during and after World War II, due partially to the local Boeing company, which established Seattle as a center for aircraft manufacturing. The city developed as a technology center in the 1980s, with companies like Amazon.com, Microsoft and T-Mobile US based in the area. The stream of new software, biotechnology, and Internet companies led to an economic revival, which increased the city's population by almost 50,000 between 1990 and 2000. Since then, Seattle has become a hub for green industry and a model for sustainable development.</p>
 
-                    <p>Seattle has a noteworthy musical history. From 1918 to 1951, there were nearly two dozen jazz nightclubs along Jackson Street, from the current Chinatown/International District, to the Central District. The jazz scene developed the early careers of Ray Charles, Quincy Jones, Ernestine Anderson and others. Seattle is also the birthplace of rock musician Jimi Hendrix and the alternative rock style grunge.</p>
+                    <p>Seattle has a noteworthy musical history. From 1918 to 1951, there were nearly two dozen jazz nightclubs along Jackson Street, from the current Chinatown/International District, to the Central District. The jazz scene developed the early careers of <b>Ray Charles</b>, <b>Quincy Jones</b>, <b>Ernestine Anderson</b> and others. Seattle is also the birthplace of rock musician Jimi Hendrix and the alternative rock style grunge.</p>
                 </article>
                 <aside class="col-4 info-link">
                     <ul>
@@ -62,8 +77,24 @@
                 </aside>
             </section>
         </main>
+        
+        <footer role="contentinfo" class="row">
+            <a id="history"></a>
+            <div class="col-4">
+            <!---changed column size to figure out what was preferred--->
+                <img src="img/seattle-seahawks-logo%20copy.svg">
+            </div>
+            <div class="col-8">
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.5 144" version="1.1"><g transform="translate(-212.24968,-460.35175)"><g transform="matrix(1.25,0,0,1.25,-93.750001,-133.09055)"><path d="m463 569.2c-11.9-2.4-27.4-3-34-3l-156.6 0c-9.7 0-19.8 0-25-8-5.2-8.1-2.4-16 6.4-31.9 0.7-1.2 27.5-51.6 27.5-51.6 0 0 2.7 3.4 5.5 5.6 2.7 2.1 5.5 3.3 13 3.3 13.3 0 98.9-0.2 99.8-0.2 17.4 0 34.9 1.8 46.3 14.3 5.9 0.6 25 3.1 40.7 10.7 9.2 4.4 15.3 11 17.6 19 0.7 2.4 1 5 1 7.6 0 7.6-2.8 16-8.4 24.8-11.8 18.5-22.7 25-23.2 25.3-6.7 4.7-13.2 4.9-13.2 4.9 0 0 5.8-6.7 7.8-13.3 2-6.6-5.2-7.4-5.2-7.4z" fill="#fff" class="logo-bkg"/><path d="M484.7 512.4C466.8 503.8 443.8 502 443.8 502 433.7 489.7 416.8 487.9 399.6 487.9c0 0-86.3 0.2-99.8 0.2-15.6 0-17.2-6.2-17.2-6.2l-21 39.2c0 0 37.3 0 54.4 0 17.1 0 18-1.7 29.3-10.1 12.1-8.9 21.7-12.1 33.1-12.1 11.4 0 18.9 2.6 31.6 8.2 12.7 5.6 19.4 8.3 27 5.1 0 0-5.9 8-23.9 0.5-18-7.5-22.8-9.1-33.7-9.1-10.8 0-23.1 5.2-38.6 20.6l18.4 14.8c0 0-4.3 6.6-7.1 10.8-2.8 4.2-2.5 7-1 9.1 1.5 2.1 3.4 3 10.2 3 6.8 0 61.4-0.1 67.5-0.1 5.3 0 21.9 0.5 34.9 3.1 17.2 3.4 6.1 18 6.1 18 0 0 11.5-7.6 23-25.5 12.7-20 9.6-36.3-8.3-44.9z" fill="#00295e"/><path d="m453 515.6c-8.1-1.9-1.2-6.7-1.2-6.7-11.7 2.4-16.1 11.9-17.1 14.6-0.2 0.4-0.4 0.7-0.6 1.1-6.5 13-12.3 12.3-23.4 12.3-4.5 0-11.3 0-19 0-15.4 0-22.5 7.6-29.9 20.6l8.7 0c7.9-11.8 13.9-15 29.6-15.9 35.8 0 64.4 10.3 79.5 18.2 21.5-36.1-10.4-42-26.7-44.3zM386.3 557.5c4-6.1 12.2-8.1 25.3-7.4 32.4 1.9 51.1 8.2 65.5 13.6-17.9-10.5-49.7-18-71.8-17.9-10.8 0-20.3 1.9-25.8 11.7l6.8 0zM421.1 521.7c-4.2 5.9-9.8 7.9-25.6 6.8-18.4-1.2-13.6-9-11.5-12.8 0 0 0 0-0.1 0 0.6-1.1 1.6-2.9 2.6-4.7-14.1-0.9-24.3 10-24.3 10 10.5 10.4 17.5 11.5 27 11.5 3.3 0 8 0 17.7 0 16.5 0 20.5-7.4 22-10.7-2.8 0.4-5.4 0.3-7.8 0z" fill="#fff"/><path d="m413.1 519.9c-0.3-0.1-0.7-0.3-1-0.4-1.6 1.7-4.4 2.7-7.1 2.3-3.6-0.5-5.6-3-4.6-5.8 0.1-0.4 0.4-0.8 0.6-1.1-1.8-0.7-3.7-1.4-5.4-2-3.7 5.9-5.8 9.8 6.9 10.9 7.9 0.7 10-0.7 11.7-3.5-0.3-0.1-0.7-0.2-1-0.4z" fill="#4dbd38" class="logo-eye"/><path d="m349.4 542.4c-6.5 11.4-9.1 14-4.5 19.4 0 0-59.3 0-72.5 0-10.7 0-17.6-0.4-21.2-5.9-3.5-5.4-2.8-10.5 6.6-27.3 0 0 51 0 61.6 0 10.6 0 13.3 0.6 19.1 5.1 5.8 4.5 10.9 8.8 10.9 8.8z" fill="#b2b7bb"/></g></g></svg>
+            </div>
+            <!-- First divider is linked to img, second is using svg code which allows you to stylize it -->
+        </footer>
     
         <!-- Add your site or application javascript here -->
-
+        <script src="//use.typekit.net/yqc7bsv.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <script src="js/plugins.min.js"></script>
+        
     </body>
 </html>

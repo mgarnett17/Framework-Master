@@ -131,9 +131,74 @@ $padding: 6px;
     }
 }
 
+@media screen and (min-width: $tablet) {
+    .row .col-1.center {
+        width: 8.33333333%;
+        margin-left: calc(91.66666666% / 2);
+    }
+
+    .row .col-2.center {
+        width: 16.66666666%;
+        margin-left: calc(83.33333333% / 2);
+    }
+    
+    .row .col-3.center {
+        width: 25%;
+        margin-left: calc(75% / 2);
+    }
+    
+    .row .col-4.center {
+        width: 33.333333333%;
+        margin-left: calc(66.66666666% / 2);
+    }
+
+    .row .col-5.center {
+        width: 41.66666666%;
+        margin-left: calc(58.33333333% / 2);
+    }
+    
+    .row .col-6.center {
+        width: 50%;
+        margin-left: calc(50% / 2);
+    }
+    
+    .row .col-7.center {
+        width: 58.33333333%;
+        margin-left: calc(41.66666666% / 2);
+    }
+
+    .row .col-8.center {
+        width: 66.66666666%;
+        margin-left: calc(33.33333333% / 2);
+    }
+
+    .row .col-9.center {
+        width: 75%;
+        margin-left: calc(25% / 2);
+    }
+
+    .row .col-10.center {
+        width: 83.333333333%;
+        margin-left: calc(16.66666666% / 2);
+    }
+
+    .row .col-11.center {
+        width: 91.66666666%;
+        margin-left: calc(8.33333333% / 2);
+    }
+}
+
 .outer {
     width: 100%;
     margin-bottom: $gutter;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    //<!--- z index 0 in the middle, -100 at the bottom, 100 at the top --->
 }
 
 .outer .row:last-of-type [class^="col-"] {

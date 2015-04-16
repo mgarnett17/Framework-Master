@@ -4,3 +4,19 @@ img {
     max-width: 100%;
     vertical-align: bottom;
 }
+
+body {
+    @include body-font;
+}
+
+h1, h2, h3, h4 {
+    @include headline-font;
+}
+
+b, strong {
+    @include body-font-bold;
+}
+
+i, em {
+    @include-font-italic;
+}
