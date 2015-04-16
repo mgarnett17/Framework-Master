@@ -77,11 +77,12 @@ $padding: 6px;
 }
 
 @media screen and (min-width: $tablet) {
-    .row-no-gutter [class^="col-"] {
-        margin-bottom: 0;
-        //margin-left: $gutter/2;
-        //margin-right: $gutter/2;
+    .row-no-gutter {
+        box-sizing: border-box;
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
     }
+    
     .row-no-gutter .col-1 {
         width: 8.33333333%;
     }
@@ -205,23 +206,30 @@ $padding: 6px;
     margin-bottom: 0;
 }
 
+/* _grid.scss updates */
+
+/*
 .vcenter {
-    width: 100%; /* Firefox needs this */
-    height: 100%; /* Height can be anything */
-    /* WebKit (Chrome & Safari) */
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    /* Firefox */
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-align: center;
-    /* IE */
-    display: -ms-box;
-    -ms-box-pack: center;
-    -ms-box-align: center;
-    /* Native CSS */
-    display: box;
-    box-pack: center;
-    box-align: center;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
 }
+
+<!--- Centering tool that works on all modern browsers --->
+*/
+
+.vcenter {
+	display: table;
+}
+
+.vcenter-c {
+	display: table-cell;
+    vertical-align: middle;
+//<!--- Centering tool that works on older browsers --->
+}
+
+

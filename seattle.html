@@ -30,11 +30,11 @@
         </div>
             
         <div class="outer vcenter banner"> 
-            <header role="banner" class="row">
+            <header role="banner" class="row vcenter-c">
                 <div class="col-3 center">
                     <div class="banner-title">
-                        <h1 data-fitter-happier-text>Seattle</h1>
-                        <h2 data-fitter-happier-text>Washington</h2>
+                        <h1 data-fitter-happier-text class="headline">Seattle</h1>
+                        <h2 data-fitter-happier-text class="headline">Washington</h2>
                     </div>
                     <!--<img src="img/seattle-lowrez.jpg" title="Seattle Skyline"/>-->
                 </div>
@@ -42,6 +42,90 @@
         </div>
         
         <main role="main">
+            
+            <!-- Lightbox Code Starts Here -->
+                <!-- Thumbnail gallery content starts here -->
+                <div class="container row-no-gutter">
+                    <div class="col-2 thumb">
+                        <a href="#picture_1">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=800x600">
+                        </a>
+                    </div>
+                    <div class="col-2 thumb">
+                        <a href="#picture_2">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=800x800">
+                        </a>
+                    </div>
+                    <div class="col-2 thumb">
+                        <a href="#picture_3">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=960x640">
+                        </a>
+                    </div>
+                    <div class="col-2 thumb">
+                        <a href="#picture_4">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=1024x768">
+                        </a>
+                    </div>
+                    <div class="col-2 thumb">
+                        <a href="#picture_5">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=1334x750">
+                        </a>
+                    </div>
+                    <div class="col-2 thumb">
+                        <a href="#picture_6">
+                            <img src="http://fakeimg.pl/200x200/F90/fff/?text=1440x960">
+                        </a>
+                    </div>
+                </div>
+                <!-- Thumbnail gallery content ends here -->
+
+                <!-- Full sized gallery starts here -->
+                <span id="gallery"></span>
+                <input id="do_loop" type="checkbox" name="do_loop" value="">
+            
+                <!-- Full Size Images start here -->
+                <span id="picture_1" class="picture">
+                    <img src="http://fakeimg.pl/800x600/F90/fff/?text=800x600"><!-- image 1/6 -->
+                    <a class="prev loop" href="#picture_6"></a><!-- image 6/6 -->
+                    <a class="next" href="#picture_2"></a><!-- image 2/6 -->
+                </span>
+                <span id="picture_2" class="picture">
+                    <img src="http://fakeimg.pl/800x800/F90/fff/?text=800x800">
+                    <a class="prev" href="#picture_1"></a>
+                    <a class="next" href="#picture_3"></a>
+                </span>
+                <span id="picture_3" class="picture">
+                    <img src="http://fakeimg.pl/960x640/F90/fff/?text=960x640">
+                    <a class="prev" href="#picture_2"></a>
+                    <a class="next" href="#picture_4"></a>
+                </span>
+                <span id="picture_4" class="picture">
+                    <img src="http://fakeimg.pl/1024x768/F90/fff/?text=1024x768">
+                    <a class="prev" href="#picture_3"></a>
+                    <a class="next" href="#picture_5"></a>
+                </span>
+                <span id="picture_5" class="picture">
+                    <img src="http://fakeimg.pl/1334x750/F90/fff/?text=1334x750">
+                    <a class="prev" href="#picture_4"></a>
+                    <a class="next" href="#picture_6"></a>
+                </span>
+                <span id="picture_6" class="picture">
+                    <img src="http://fakeimg.pl/1440x960/F90/fff/?text=1440x960">
+                    <a class="prev" href="#picture_5"></a>
+                    <a class="next loop" href="#picture_1"></a>
+                </span>
+                <!-- Full size images end here -->
+            
+                <span id="chrome">
+                    <label class="loop" for="do_loop">Loop</label>
+                    <a class="close" href="#gallery"></a>
+                </span>
+
+                <div id="cover"></div>
+                <div id="loading"></div>
+                <!-- Full sized gallery ends here -->
+            <!-- Lightbox Code Ends Here -->
+            
             <section class="row-no-gutter gallery">
                 <div class="col-3 gallery-image">
                     <img src="img/emp-lowrez.jpg" title="Experience Music Project"/>
