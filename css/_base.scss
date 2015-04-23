@@ -20,3 +20,12 @@ b, strong {
 i, em {
     @include-font-italic;
 }
+
+a, .btn, .toggler, .untoggler {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,20%);
+    }
+}
